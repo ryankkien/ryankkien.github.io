@@ -37,7 +37,7 @@ function Sidebar() {
         <span className="divider">|</span>
         <ul>
           <li>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryan-kien-63019517b/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryankien">
               <FontAwesomeIcon icon={faLinkedin} color="8FC2E8" />
             </a>
           </li>
