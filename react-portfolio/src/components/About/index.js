@@ -73,14 +73,11 @@ const About = () => {
           </p>
           <p>
             If I were to describe myself in a sentence, it would be that I am always curious about everything.
-          </p>
-          <p>
             Keep looking through the site to learn more about me! I will try to update it with things I find interesting.
           </p>
         </div>
 
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

@@ -43,7 +43,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunitiesand internships - especially on ambitious
+            I am interested in freelance opportunities and internships - especially on ambitious
             or large projects. The best way to contact me is through my twitter, which you can access on the navigation bar above.
           </p>
           {/* <div className="contact-form">
@@ -83,7 +83,6 @@ const Contact = () => {
           </div> */}
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

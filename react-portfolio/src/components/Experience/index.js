@@ -1,18 +1,7 @@
 import { useEffect, useState } from 'react'
-import {
-  faAngular,
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
-const About = () => {
+const Experience = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -27,17 +16,82 @@ const About = () => {
   return (
     <>
       <div className="container experience-page">
-      <div className="text-zone">
-          <h1 className = 'experience'>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['🛠️','e', 'x', 'p', 'e', 'r','i', 'e', 'n', 'c',  'e']}
-              idx={15}
-            />
-          </h1>
-        </div>
+      {/* <div className="text-zone">
+          <h1 className = 'experience'> */}
+      <section class="cards">
+<article class="card card--1">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="https://observablehq.com/@ryan-kien-ws/semantify" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> project</span>
+    <h3 class="card__title">semantify</h3>
+  </div>
+</article>
+  
+  
+<article class="card card--2">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="http://datafest.stat.ucla.edu/past-datafests/2022-asa-datafesttm-results/" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> datafest 2022</span>
+    <h3 class="card__title">best insight award</h3>
+  </div>
+</article>  
+
+<article class="card card--3">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="http://processing.linguistics.ucla.edu/research.html" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> research</span>
+    <h3 class="card__title">language processing lab @ ucla</h3>
+  </div>
+</article>  
+
+<article class="card card--4">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="https://www.ai.sanken.osaka-u.ac.jp" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category">ml research</span>
+    <h3 class="card__title">osaka university frontier  lab</h3>
+  </div>
+</article> 
+
+<article class="card card--5">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category">wip site</span>
+    <h3 class="card__title">suppstack</h3>
+  </div>
+</article> 
+  
+  
+  
+  </section>
+          {/* </h1>
+        </div> */}
       </div>
     </>
   )
 }
-export default About
+export default Experience

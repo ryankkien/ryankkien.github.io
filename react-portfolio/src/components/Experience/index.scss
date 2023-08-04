@@ -1,3 +1,183 @@
-.experience{
-  text-align: center;
+.container.experience-page{
+  body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+      margin: 0;
+    width: 100%;
+  height: 100%;
+      padding: 0;
+  }
+
+  body {
+    background-color: #D2DBDD;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center children */
+    align-items: center; /* Vertically center children */
+    max-width: 80%;
+    flex-wrap: wrap; /* Allow the cards to wrap to the next line if they don't fit */
+    margin: 0 auto; /* Center the container itself */
+    margin-top: 50px;
+    @media screen and (max-width: 768px) {
+      max-width: 700px;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 90%;
+      flex-direction: column; // Cards in a column on very small screens
+      padding: 0;
+    }
+  }
+  
+
+  .card--1 .card__img, .card--1 .card__img--hover {
+      background-image: url('https://static.observableusercontent.com/files/11645c4ffbf3ba306cc7c7f590e555f66df6f1864747ced542c7e9fffaceda1788a1a9551d05e4ab5f4eddc66656e0ce9684902cf1e28915fc823158d5668032');
+  }
+
+  .card--2 .card__img, .card--2 .card__img--hover {
+      background-image: url('http://datafest.stat.ucla.edu/wp-content/uploads/2022/05/Winner-Best-insight-1.jpg');
+  }
+
+  .card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('http://processing.linguistics.ucla.edu/images/adam-tracker2.png');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+  background-image: url('https://ikedalab.bioreg.kyushu-u.ac.jp/wp/wp-content/uploads/2022/04/2022%E9%98%AA%E5%A4%A7%E5%90%B9%E7%94%B0_%E6%A1%9C_%E5%B0%8F-1024x906.jpg');
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+  background-image: url('https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png');
+}
+
+
+  .card__like {
+      width: 18px;
+  }
+
+  .card__clock {
+      width: 15px;
+    vertical-align: middle;
+      fill: #AD7D52;
+  }
+  .card__time {
+      font-size: 12px;
+      color: #AD7D52;
+      vertical-align: middle;
+      margin-left: 5px;
+  }
+
+  .card__clock-info {
+      float: right;
+  }
+
+  .card__img {
+    visibility: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+    
+  }
+
+  .card__info-hover {
+      position: absolute;
+      padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+  }
+
+  .card__img--hover {
+    transition: 0.2s all ease-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    position: absolute;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+    
+  }
+  .card {
+    // flex: 1 0 auto;
+    margin-right: 25px;
+    margin-bottom : 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+      width: 25%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+
+        // Media query for screens with a max-width of 768px
+    @media screen and (max-width: 768px) {
+      width: calc(50% - 10px); // Two cards in a row on small screens
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%; // One card in a row on very small screens
+      margin-right: 0;
+      margin-bottom: 15px; // Adjust bottom margin as needed
+    }
+  }
+  .card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+      transform: scale(1.10, 1.10);
+  }
+
+  .card__info {
+  z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+  }
+
+  .card__category {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    color: rgb(55, 53, 47);
+  }
+
+  .card__title {
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+      color:rgb(55, 53, 47)''
+  }
+
+
+  .card:hover .card__img--hover {
+      height: 100%;
+      opacity: 0.3;
+  }
+
+  .card:hover .card__info {
+      background-color: transparent;
+      position: relative;
+  }
+
+  .card:hover .card__info-hover {
+      opacity: 1;
+  }
 }
