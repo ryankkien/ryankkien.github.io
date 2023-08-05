@@ -27,33 +27,34 @@ const About = () => {
   return (
     <>
       <div className="container about-page">
+        <div id="blue-background">
           <div id="card-group">
-          <div data-index="8" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="7" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="6" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="5" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="4" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="3" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="2" class="card-container">
-                <div class="card"></div>
-            </div>
-            <div data-index="1" class="card-container">
-                <div class="card"></div>
-            </div>
+            <div data-index="8" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="7" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="6" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="5" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="4" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="3" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="2" class="card-container">
+                  <div class="card"></div>
+              </div>
+              <div data-index="1" class="card-container">
+                  <div class="card"></div>
+              </div>
+          </div>
         </div>
-        <div id="blue-background"></div>
       <div className="text-zone">
           <h1>
             <AnimatedLetters
