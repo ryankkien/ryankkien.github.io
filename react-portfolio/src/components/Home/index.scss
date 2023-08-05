@@ -16,11 +16,12 @@
             height:  100%;
             max-height: 100%;
             // white-space: nowrap; // Prevent wrapping
-            overflow-x: auto; // Allow horizontal scrolling if the text overflows
+            overflow: hidden;
           }
     }
 
     h1{
+        overflow: hidden;
         color: #37352f;
         font-size: 40px;
         margin: 0;
