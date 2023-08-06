@@ -1,11 +1,11 @@
 .container.experience-page{
-  body, html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
-      margin: 0;
-    width: 100%;
-  height: 100%;
-      padding: 0;
-  }
+  // body, html {
+  //   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+  //     margin: 0;
+  //   width: 100%;
+  // height: 100%;
+  //     padding: 0;
+  // }
 
   body {
     background-color: #D2DBDD;
@@ -18,17 +18,19 @@
   }
 
   .cards {
+    z-index: 99999999;
     width: 100%;
     display: flex;
     justify-content: center; /* Horizontally center children */
     align-items: center; /* Vertically center children */
-    max-width: 80%;
+    max-width: 90%;
     flex-wrap: wrap; /* Allow the cards to wrap to the next line if they don't fit */
     margin: 0 auto; /* Center the container itself */
     margin-top: 50px;
-    @media screen and (max-width: 768px) {
-      max-width: 700px;
-    }
+    flex-direction: wrap column;
+    // @media screen and (max-width: 768px) {
+    //   max-width: 700px;
+    // }
 
     @media screen and (max-width: 480px) {
       max-width: 90%;
@@ -57,27 +59,10 @@
 .card--5 .card__img, .card--5 .card__img--hover {
   background-image: url('https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png');
 }
+.card--6 .card__img, .card--6 .card__img--hover {
+  background-image: url('https://education.python.org/static/images/snake_teach.png');
+}
 
-
-  .card__like {
-      width: 18px;
-  }
-
-  .card__clock {
-      width: 15px;
-    vertical-align: middle;
-      fill: #AD7D52;
-  }
-  .card__time {
-      font-size: 12px;
-      color: #AD7D52;
-      vertical-align: middle;
-      margin-left: 5px;
-  }
-
-  .card__clock-info {
-      float: right;
-  }
 
   .card__img {
     visibility: hidden;
@@ -126,12 +111,14 @@
 
         // Media query for screens with a max-width of 768px
     @media screen and (max-width: 768px) {
+      visibility: visible;
       width: calc(50% - 10px); // Two cards in a row on small screens
       margin-right: 10px;
       margin-bottom: 10px;
     }
 
     @media screen and (max-width: 480px) {
+      visibility: visible;
       width: 100%; // One card in a row on very small screens
       margin-right: 0;
       margin-bottom: 15px; // Adjust bottom margin as needed

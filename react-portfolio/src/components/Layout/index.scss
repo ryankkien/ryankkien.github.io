@@ -84,7 +84,7 @@
     width: 35%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    max-height: 100%;
   }
 
   @media screen and (max-width: 768px) {
@@ -101,7 +101,7 @@
     }
   }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .page {
     position: initial;
   }
