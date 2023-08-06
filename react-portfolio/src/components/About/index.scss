@@ -1,152 +1,154 @@
+.container.about-page{
 html,
-body {
-  padding: 5px;
-  margin: 0;
-  background-color: #F7F7F5;
-  overflow-x: hidden;
-  height: 100%;
-}
-
-h1{
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    top: 10%;
-    // width: 110%
+  body {
+    padding: 5px;
+    margin: 0;
+    background-color: #F7F7F5;
+    overflow-x: hidden;
+    height: 100%;
   }
-}
 
-.container.about-page p {
-  font-size: 16px;
-  @media screen and (min-width: 1081px) {
-    // Styles for screens smaller than or equal to 800px
-    font-size: 20px;
+  h1{
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      top: 20px;
+      // width: 110%
+    }
   }
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
+
+  .container.about-page p {
     font-size: 16px;
-  }
-}
-
-
-#card-group {
-  position: absolute;
-  width: 15%;
-  height: 20%;
-  left: 0%;
-  top: 20%;
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    visibility: hidden;
-  }
-}
-
-.card-container {
-  position: absolute;
-  width: 60%;
-  height: 120%;
-  right: 0%;
-  top: 40%;
-  transform: translate(0%, 0%); // Initially stacked in the middle
-  transition: all 0.5s ease;
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    visibility: hidden;
-  }
-}
-
-.card {
-  background-color: #F7F7F5;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; // Adjust this to fit the images
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5em;
-  box-shadow: 0px 15px 20px -4px hsla(0, 0%, 30%, 0.75);
-  z-index: initial;
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    visibility: hidden;
-  }
-}
-
-#card-group {
-  @media screen and (max-width : 800){
-    visibility: hidden;
-  }
-    .card-container[data-index="1"] .card {
-      background-image: url(../../assets/images/python.png);
+    @media screen and (min-width: 1081px) {
+      // Styles for screens smaller than or equal to 800px
+      font-size: 20px;
     }
-  
-    .card-container[data-index="2"] .card {
-      background-image: url(../../assets/images/pytorch.png);
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      font-size: 16px;
     }
-  
-    .card-container[data-index="3"] .card {
-      background-image: url(../../assets/images/tensorflow.png);
-    }
-      .card-container[data-index="4"] .card {
-          background-image: url(../../assets/images/r.png);
-      }
-        .card-container[data-index="5"] .card {
-          background-image: url(../../assets/images/react.png);
-      }
-        .card-container[data-index="6"] .card {
-          background-image: url(../../assets/images/html.png);
-      }
-      .card-container[data-index="7"] .card {
-        background-image: url(../../assets/images/mongodb.png);
-      }
-      .card-container[data-index="8"] .card {
-        background-image: url(../../assets/images/cpp.png);
-      }
-  
-  // ...
-
-  /* Keyframes for moving cards into place */
-  @keyframes moveToPlace8 { to { transform: translate(0%, 0%); } }
-  @keyframes moveToPlace7 { to { transform: translate(120%, 0%); } }
-  @keyframes moveToPlace6 { to { transform: translate(240%, 0%); } }
-  @keyframes moveToPlace5 { to { transform: translate(360%, 0%); } }
-  @keyframes moveToPlace4 { to { transform: translate(0%, 120%); } }
-  @keyframes moveToPlace3 { to { transform: translate(120%, 120%); } }
-  @keyframes moveToPlace2 { to { transform: translate(240%, 120%); } }
-  @keyframes moveToPlace1 { to { transform: translate(360%, 120%); } }
-
-  
-  /* Define animations for each card */
-  .card-container[data-index="1"] { animation: moveToPlace1 1s 2s forwards; }
-  .card-container[data-index="2"] { animation: moveToPlace2 1s 2.25s forwards; }
-  .card-container[data-index="3"] { animation: moveToPlace3 1s 2.5s forwards; }
-  .card-container[data-index="4"] { animation: moveToPlace4 1s 2.75s forwards; }
-  .card-container[data-index="5"] { animation: moveToPlace5 1s 3s forwards; }
-  .card-container[data-index="6"] { animation: moveToPlace6 1s 3.25s forwards; }
-  .card-container[data-index="7"] { animation: moveToPlace7 1s 3.5s forwards; }
-  .card-container[data-index="8"] { animation: moveToPlace8 1s 3.75s forwards; }
-}
-
-
-#blue-background {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #35639A;
-  z-index: -1; // Position it behind the other content
-  animation: slideInFromRight 1s ease-out forwards;
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    visibility: hidden;
   }
-}
 
 
-@keyframes slideInFromRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(50%); }
-}
+  #card-group {
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    left: 0%;
+    top: 20%;
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      visibility: hidden;
+    }
+  }
 
-.text-zone{
-  height: 100%;
+  .card-container {
+    position: absolute;
+    width: 60%;
+    height: 120%;
+    right: 0%;
+    top: 40%;
+    transform: translate(0%, 0%); // Initially stacked in the middle
+    transition: all 0.5s ease;
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      visibility: hidden;
+    }
+  }
+
+  .card {
+    background-color: #F7F7F5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; // Adjust this to fit the images
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+    box-shadow: 0px 15px 20px -4px hsla(0, 0%, 30%, 0.75);
+    z-index: initial;
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      visibility: hidden;
+    }
+  }
+
+  #card-group {
+    @media screen and (max-width : 800){
+      visibility: hidden;
+    }
+      .card-container[data-index="1"] .card {
+        background-image: url(../../assets/images/python.png);
+      }
+    
+      .card-container[data-index="2"] .card {
+        background-image: url(../../assets/images/pytorch.png);
+      }
+    
+      .card-container[data-index="3"] .card {
+        background-image: url(../../assets/images/tensorflow.png);
+      }
+        .card-container[data-index="4"] .card {
+            background-image: url(../../assets/images/r.png);
+        }
+          .card-container[data-index="5"] .card {
+            background-image: url(../../assets/images/react.png);
+        }
+          .card-container[data-index="6"] .card {
+            background-image: url(../../assets/images/html.png);
+        }
+        .card-container[data-index="7"] .card {
+          background-image: url(../../assets/images/mongodb.png);
+        }
+        .card-container[data-index="8"] .card {
+          background-image: url(../../assets/images/cpp.png);
+        }
+    
+    // ...
+
+    /* Keyframes for moving cards into place */
+    @keyframes moveToPlace8 { to { transform: translate(0%, 0%); } }
+    @keyframes moveToPlace7 { to { transform: translate(120%, 0%); } }
+    @keyframes moveToPlace6 { to { transform: translate(240%, 0%); } }
+    @keyframes moveToPlace5 { to { transform: translate(360%, 0%); } }
+    @keyframes moveToPlace4 { to { transform: translate(0%, 120%); } }
+    @keyframes moveToPlace3 { to { transform: translate(120%, 120%); } }
+    @keyframes moveToPlace2 { to { transform: translate(240%, 120%); } }
+    @keyframes moveToPlace1 { to { transform: translate(360%, 120%); } }
+
+    
+    /* Define animations for each card */
+    .card-container[data-index="1"] { animation: moveToPlace1 1s 2s forwards; }
+    .card-container[data-index="2"] { animation: moveToPlace2 1s 2.25s forwards; }
+    .card-container[data-index="3"] { animation: moveToPlace3 1s 2.5s forwards; }
+    .card-container[data-index="4"] { animation: moveToPlace4 1s 2.75s forwards; }
+    .card-container[data-index="5"] { animation: moveToPlace5 1s 3s forwards; }
+    .card-container[data-index="6"] { animation: moveToPlace6 1s 3.25s forwards; }
+    .card-container[data-index="7"] { animation: moveToPlace7 1s 3.5s forwards; }
+    .card-container[data-index="8"] { animation: moveToPlace8 1s 3.75s forwards; }
+  }
+
+
+  #blue-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #35639A;
+    z-index: -1; // Position it behind the other content
+    animation: slideInFromRight 1s ease-out forwards;
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      visibility: hidden;
+    }
+  }
+
+
+  @keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(50%); }
+  }
+
+  .text-zone{
+    height: 100%;
+  }
 }

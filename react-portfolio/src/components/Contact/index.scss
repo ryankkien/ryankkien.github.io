@@ -1,91 +1,42 @@
-.contact-form {
-  width: 100%;
-  margin-top: 20px;
+.container.contact-page{
+  .contact-form {
+    width: 100%;
+    margin-top: 20px;
 
-  ul {
-    padding: 0;
-    margin: 0;
-
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      margin-bottom: 10px;
-      opacity: 0;
-      overflow: hidden;
-      display: block;
-      clear: both;
-      position: relative;
-      animation: fadeInUp 2s 2s;
-      animation-fill-mode: forwards;
-    }
-
-    li.half {
-      width: 100%; /* Set to 100% so that the inputs take up the full width */
-      margin-left: 0; /* Remove left margin */
-      float: none; /* Remove floating */
-      clear: both; /* Clear both sides */
+    .flat-button {
+      color: #ffd700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
     }
   }
 
-  input[type='text'],
-  input[type='email'],
-  input[type='submit'] {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
+  .container.contact-page p {
     font-size: 16px;
-    color: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
+    @media screen and (min-width: 1081px) {
+      // Styles for screens smaller than or equal to 800px
+      font-size: 20px;
+    }
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      font-size: 16px;
+    }
   }
 
-  textarea {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 150px;
-  }
-
-  .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
-  }
-}
-
-.container.contact-page p {
-  font-size: 16px;
-  @media screen and (min-width: 1081px) {
-    // Styles for screens smaller than or equal to 800px
-    font-size: 20px;
-  }
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    font-size: 16px;
-  }
-}
-
-h1{
-  @media screen and (max-width: 800px) {
-    // Styles for screens smaller than or equal to 800px
-    top: 0px;
-    width: 110%
+  h1{
+    @media screen and (max-width: 800px) {
+      // Styles for screens smaller than or equal to 800px
+      top: 20px;
+      width: 110%;
+    }
   }
 }

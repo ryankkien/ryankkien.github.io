@@ -7,7 +7,8 @@
   //     padding: 0;
   // }
 
-  body {
+.body {
+    overflow: visible !important;
     background-color: #D2DBDD;
     display: flex;
     display: -webkit-flex;
@@ -15,10 +16,10 @@
     -webkit-align-items: center;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
 
   .cards {
-    z-index: 99999999;
     width: 100%;
     display: flex;
     justify-content: center; /* Horizontally center children */
@@ -27,7 +28,7 @@
     flex-wrap: wrap; /* Allow the cards to wrap to the next line if they don't fit */
     margin: 0 auto; /* Center the container itself */
     margin-top: 50px;
-    flex-direction: wrap column;
+    flex-direction: wrap;
     // @media screen and (max-width: 768px) {
     //   max-width: 700px;
     // }

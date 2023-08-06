@@ -89,7 +89,7 @@ const Experience = () => {
   <div class="card__info-hover">
   </div>
   <div class="card__img"></div>
-  <a href="https://ceils.ucla.edu/learning-communities-trainings/learning-assistant-program/" target="_blank" rel="noopener noreferrer" class="card_link">
+  <a href="https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png" target="_blank" rel="noopener noreferrer" class="card_link">
      <div class="card__img--hover"></div>
    </a>
   <div class="card__info">
