@@ -5,6 +5,7 @@ html,
     margin: 0;
     background-color: #F7F7F5;
     overflow-x: hidden;
+    overflow-y: auto;
     height: 100%;
   }
 
@@ -17,7 +18,7 @@ html,
   }
 
   .container.about-page p {
-    font-size: 16px;
+    font-size: 20px;
     @media screen and (min-width: 1081px) {
       // Styles for screens smaller than or equal to 800px
       font-size: 20px;
@@ -34,7 +35,7 @@ html,
     width: 15%;
     height: 20%;
     left: 0%;
-    top: 20%;
+    top: 15%;
     @media screen and (max-width: 800px) {
       // Styles for screens smaller than or equal to 800px
       visibility: hidden;
@@ -45,7 +46,7 @@ html,
     position: absolute;
     width: 60%;
     height: 120%;
-    right: 0%;
+    right: 5%;
     top: 40%;
     transform: translate(0%, 0%); // Initially stacked in the middle
     transition: all 0.5s ease;

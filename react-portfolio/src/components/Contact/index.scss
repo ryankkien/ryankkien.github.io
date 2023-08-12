@@ -1,7 +1,12 @@
 .container.contact-page{
+  .text-zone{
+    left: 5% !important;
+    top: 30%;
+  }
   .contact-form {
     width: 100%;
     margin-top: 20px;
+    left: 10%;
 
     .flat-button {
       color: #ffd700;

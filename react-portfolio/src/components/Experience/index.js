@@ -68,7 +68,7 @@ const Experience = () => {
    </a>
   <div class="card__info">
     <span class="card__category">ml research</span>
-    <h3 class="card__title">osaka university frontier  lab</h3>
+    <h3 class="card__title">osaka university frontier lab</h3>
   </div>
 </article> 
 
@@ -76,7 +76,7 @@ const Experience = () => {
   <div class="card__info-hover">
   </div>
   <div class="card__img"></div>
-  <a href="https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png" target="_blank" rel="noopener noreferrer" class="card_link">
+  <a href="https://github.com/ryankkien/suppstack" target="_blank" rel="noopener noreferrer" class="card_link">
      <div class="card__img--hover"></div>
    </a>
   <div class="card__info">
@@ -89,7 +89,7 @@ const Experience = () => {
   <div class="card__info-hover">
   </div>
   <div class="card__img"></div>
-  <a href="https://cdn.discordapp.com/attachments/320650758414532608/1135300908658475098/Screen_Shot_2023-07-30_at_1.00.25_PM.png" target="_blank" rel="noopener noreferrer" class="card_link">
+  <a href="hhttps://ceils.ucla.edu/learning-communities-trainings/learning-assistant-program/" target="_blank" rel="noopener noreferrer" class="card_link">
      <div class="card__img--hover"></div>
    </a>
   <div class="card__info">
