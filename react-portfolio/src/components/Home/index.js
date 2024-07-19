@@ -38,9 +38,9 @@ const Home = () => {
             idx = {19}
             />
             </h1>
-            <h2> fullstack developer, python expert, machine learning enthusiast</h2>
+            <h2>  machine learning researcher and web developer</h2>
             <Link to="/contact" className = 'flat-button' > contact me</Link>
-            <Link to="https://files.catbox.moe/b6u7id.pdf" className="flat-button" target="_blank">resume</Link>
+            <Link to="https://drive.google.com/file/d/1mzifRuukNqnBXOlA5UiEJafnAq85EMLi/view?usp=sharing" className="flat-button" target="_blank">resume</Link>
             </div>
         <img src={profilePic} alt="Ryan" className="profile-image" />
         </div>

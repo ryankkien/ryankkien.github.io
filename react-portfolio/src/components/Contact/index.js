@@ -45,6 +45,7 @@ const Contact = () => {
           <p>
             I am interested in freelance opportunities and internships - especially on ambitious
             or large projects. The best way to contact me is through my twitter, which you can access on the navigation bar above.
+            Alternatively, you can email me at ryankien at ucla dot edu.
           </p>
           {/* <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

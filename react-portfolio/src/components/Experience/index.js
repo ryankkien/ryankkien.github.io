@@ -84,12 +84,23 @@ const Experience = () => {
     <h3 class="card__title">suppstack</h3>
   </div>
 </article> 
-
+<article class="card card--7">
+  <div class="card__info-hover">
+  </div>
+  <div class="card__img"></div>
+  <a href="https://medium.com/@ryankkien" target="_blank" rel="noopener noreferrer" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category">writing</span>
+    <h3 class="card__title">technical ml articles</h3>
+  </div>
+</article> 
 <article class="card card--6">
   <div class="card__info-hover">
   </div>
   <div class="card__img"></div>
-  <a href="hhttps://ceils.ucla.edu/learning-communities-trainings/learning-assistant-program/" target="_blank" rel="noopener noreferrer" class="card_link">
+  <a href="https://ceils.ucla.edu/learning-communities-trainings/learning-assistant-program/" target="_blank" rel="noopener noreferrer" class="card_link">
      <div class="card__img--hover"></div>
    </a>
   <div class="card__info">
@@ -97,7 +108,7 @@ const Experience = () => {
     <h3 class="card__title">python learning assistant</h3>
   </div>
 </article> 
-  
+
   
   
   </section>
