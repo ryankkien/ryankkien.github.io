@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 216 34% 17%;
+    --radius: 0.5rem;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  section {
+    scroll-margin-top: 4rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* font-feature-settings: "rlig" 1, "calt" 1; Remove for now, can cause font issues */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Blob Animation Styles */
+@keyframes blob-move {
+  0% {
+    transform: translate(0, 0) scale(1);
+    border-radius: 50%;
+  }
+  33% {
+    transform: translate(50px, 100px) scale(1.2);
+    border-radius: 40% 60% 60% 40%;
+  }
+  66% {
+    transform: translate(-50px, -50px) scale(0.8);
+    border-radius: 60% 40% 40% 60%;
+  }
+  100% {
+    transform: translate(100px, 50px) scale(1.1);
+    border-radius: 30% 70% 70% 30%;
+  }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0.8;
+}
+
+.blob-red {
+  top: 20%;
+  left: 20%;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 50, 50, 0.7);
+  animation: blob-move 10s infinite alternate;
+}
+
+.blob-blue {
+  top: 60%;
+  left: 60%;
+  width: 100px;
+  height: 100px;
+  background: rgba(50, 50, 255, 0.7);
+  animation: blob-move 8s infinite alternate-reverse;
+}
+
+.blob-green {
+  top: 30%;
+  left: 70%;
+  width: 120px;
+  height: 120px;
+  background: rgba(50, 255, 50, 0.7);
+  animation: blob-move 12s infinite alternate;
+}
+
+.blob-purple {
+  top: 70%;
+  left: 30%;
+  width: 130px;
+  height: 130px;
+  background: rgba(150, 50, 255, 0.7);
+  animation: blob-move 9s infinite alternate;
+}
