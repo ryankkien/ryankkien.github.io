@@ -30,8 +30,9 @@ const NavBar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-background/80 backdrop-blur-sm z-20 font-bold">
       <div className="container mx-auto px-4 py-4 flex justify-center space-x-8">
-        <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="text-foreground hover:text-primary">projects</a>
+        <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')} className="text-foreground hover:text-primary">experience</a>
         <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="text-foreground hover:text-primary">skills</a>
+        <a href="#interests" onClick={(e) => handleNavClick(e, 'interests')} className="text-foreground hover:text-primary">interests</a>
         <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-foreground hover:text-primary">contact</a>
       </div>
     </nav>

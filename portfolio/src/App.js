@@ -3,8 +3,9 @@ import './App.css';
 // import { Button } from '@/components/ui/button'; // No longer needed here
 import NavBar from '@/components/layout/NavBar';
 import HeroSection from '@/components/layout/Header';
-import ProjectsSection from '@/components/sections/Projects';
+import ExperienceSection from '@/components/sections/Experience';
 import SkillsSection from '@/components/sections/Skills';
+import InterestsSection from '@/components/sections/Interests';
 import ContactSection from '@/components/sections/Contact';
 // import EducationSection from '@/components/sections/Education'; // Remove Education
 
@@ -49,8 +50,9 @@ function App() {
         <Button>Test Button</Button> 
       </header> */} {/* Replaced by Header component */}
       <main className="container mx-auto p-4 md:p-6 space-y-16 md:space-y-24">
-        <ProjectsSection />
+        <ExperienceSection />
         <SkillsSection />
+        <InterestsSection />
         <ContactSection />
         {/* <EducationSection /> */}
       </main>
