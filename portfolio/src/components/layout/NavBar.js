@@ -11,13 +11,13 @@ const NavBar = () => {
     const distance = targetPosition - startPosition;
     const duration = 1000;
     let start = null;
-    const easeOutQuad = (t) => t * (2 - t);
+    const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 
     const step = (timestamp) => {
       if (!start) start = timestamp;
       const progress = timestamp - start;
       const percent = Math.min(progress / duration, 1);
-      window.scrollTo(0, startPosition + distance * easeOutQuad(percent));
+      window.scrollTo(0, startPosition + distance * easeInOutQuad(percent));
       if (progress < duration) window.requestAnimationFrame(step);
     };
     window.requestAnimationFrame(step);

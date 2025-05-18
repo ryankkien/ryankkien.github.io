@@ -144,3 +144,23 @@ code {
   background: rgba(150, 50, 255, 0.7);
   animation: blob-move 9s infinite alternate;
 }
+
+/*fade edges top and bottom*/
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  pointer-events: none;
+  z-index: 20;
+}
+body::before {
+  top: 0;
+  background: linear-gradient(to bottom, hsl(var(--background)), transparent);
+}
+body::after {
+  bottom: 0;
+  background: linear-gradient(to top, hsl(var(--background)), transparent);
+}
