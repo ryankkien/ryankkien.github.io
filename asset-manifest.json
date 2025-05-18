@@ -1,27 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfdcdaf2.css",
-    "main.js": "/static/js/main.c65bc0b0.js",
-    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
-    "static/media/ryanphoto.jpg": "/static/media/ryanphoto.f2ed49cb9c726f476450.jpg",
-    "static/media/python.png": "/static/media/python.b5dc1a86753eb523058d.png",
-    "static/media/r.png": "/static/media/r.fc0b3c10c997e82a0b41.png",
-    "static/media/react.png": "/static/media/react.25d70b374565ea287fe8.png",
-    "static/media/tensorflow.png": "/static/media/tensorflow.69e039febc4029f22046.png",
-    "static/media/cpp.png": "/static/media/cpp.5471253441baedca9198.png",
-    "static/media/pytorch.png": "/static/media/pytorch.d53407fc59e50ce75f36.png",
-    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/mongodb.png": "/static/media/mongodb.f1a295a223486ee603e6.png",
-    "static/media/html.png": "/static/media/html.07017781ed2cfb1ba721.png",
-    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "main.css": "/static/css/main.d03734de.css",
+    "main.js": "/static/js/main.a5bcab4f.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/face.jpg": "/static/media/face.1db946dde69d27cae192.jpg",
     "index.html": "/index.html",
-    "main.dfdcdaf2.css.map": "/static/css/main.dfdcdaf2.css.map",
-    "main.c65bc0b0.js.map": "/static/js/main.c65bc0b0.js.map",
-    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+    "main.d03734de.css.map": "/static/css/main.d03734de.css.map",
+    "main.a5bcab4f.js.map": "/static/js/main.a5bcab4f.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfdcdaf2.css",
-    "static/js/main.c65bc0b0.js"
+    "static/css/main.d03734de.css",
+    "static/js/main.a5bcab4f.js"
   ]
 }
