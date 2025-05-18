@@ -23,7 +23,7 @@ const interestsData = [
 
 const InterestsSection = () => {
   return (
-    <section id="interests" className="py-12 md:py-16 bg-muted/30">
+    <section id="interests" className="py-12 md:py-16">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-8">Interests</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
