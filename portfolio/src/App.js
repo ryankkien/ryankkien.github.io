@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 // import { Button } from '@/components/ui/button'; // No longer needed here
 import NavBar from '@/components/layout/NavBar';
@@ -9,6 +9,37 @@ import ContactSection from '@/components/sections/Contact';
 // import EducationSection from '@/components/sections/Education'; // Remove Education
 
 function App() {
+  useEffect(() => {
+    let velocity = 0;
+    let ticking = false;
+    let animationFrame;
+
+    const onWheel = (e) => {
+      e.preventDefault();
+      velocity += e.deltaY;
+      if (!ticking) {
+        ticking = true;
+        animationFrame = requestAnimationFrame(updateScroll);
+      }
+    };
+
+    const updateScroll = () => {
+      window.scrollBy(0, velocity);
+      velocity *= 0.9; //friction
+      if (Math.abs(velocity) > 0.5) {
+        animationFrame = requestAnimationFrame(updateScroll);
+      } else {
+        ticking = false;
+      }
+    };
+
+    window.addEventListener('wheel', onWheel, { passive: false });
+    return () => {
+      window.removeEventListener('wheel', onWheel);
+      cancelAnimationFrame(animationFrame);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <NavBar />
